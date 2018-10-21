@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="LeetcodeStudy:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="LeetcodeStudy.war">
+      <element id="artifact" artifact-name="LeetcodeStudy:war exploded" />
+    </root>
+  </artifact>
+</component>
