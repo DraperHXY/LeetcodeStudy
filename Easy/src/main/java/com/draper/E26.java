@@ -5,11 +5,12 @@ package com.draper;
  */
 public class E26 {
 
-    static int[] testCase = {0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
+    static int[] testCase1 = {0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
+    static int[] testCase = {1, 1, 2};
 
     public static void main(String[] args) {
         System.out.println(removeDuplicates(testCase));
-        System.out.println(testCase[6]);
+//        System.out.println(testCase[6]);
     }
 
 
@@ -27,7 +28,7 @@ public class E26 {
                 nums[i] = nums[j];
             }
         }
-        return i;
+        return i + 1;
     }
 
 
