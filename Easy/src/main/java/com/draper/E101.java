@@ -10,11 +10,7 @@ public class E101 {
     }
 
     public boolean isSymmetric(TreeNode root) {
-        if (root == null) {
-            return true;
-        }
-        return isMirro(root.left, root.right);
-
+        return root == null || isMirro(root.left, root.right);
     }
 
     public static boolean isMirro(TreeNode leftNode, TreeNode rightNode) {
@@ -28,9 +24,6 @@ public class E101 {
         if (leftNode.val != rightNode.val)
             return false;
 
-
         return isMirro(leftNode.left, rightNode.right) && isMirro(leftNode.right, rightNode.left);
-
     }
-
 }
